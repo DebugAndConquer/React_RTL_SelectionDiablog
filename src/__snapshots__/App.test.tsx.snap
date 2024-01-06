@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches the snapshot 1`] = `
+<div>
+  <div
+    class="main-container"
+  >
+    <div
+      class="sel-widget"
+    >
+      <h1>
+        Element selection
+      </h1>
+      <p>
+        Number of selected elements: 
+        0
+      </p>
+      <div
+        class="sel-widget__selected-opt-cont"
+      >
+        <p
+          class="no-selected-options"
+        >
+          Selected elements will appear here
+        </p>
+      </div>
+      <br />
+      <button
+        class="btn btn--green"
+      >
+        Change my selection
+      </button>
+    </div>
+  </div>
+</div>
+`;

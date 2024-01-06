@@ -1,0 +1,18 @@
+.selector-option {
+    width: 14rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+
+    & > button {
+        font-weight: 700;
+        &:hover {
+            color: red;
+            cursor: pointer;
+        }
+    }
+}

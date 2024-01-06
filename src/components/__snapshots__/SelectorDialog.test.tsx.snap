@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches the snapshot 1`] = `
+<div>
+  <div
+    class="selector-dialog"
+  >
+    <p>
+      Element Selection Dialog
+    </p>
+    <div
+      class="selector-dialog__filters"
+    >
+      <div>
+        <label>
+          Search
+        </label>
+        <input
+          data-testid="mainSearchElement"
+          placeholder="Start typing..."
+          type="search"
+        />
+      </div>
+      <div>
+        <label>
+          Filter
+        </label>
+        <select
+          data-testid="mainFilterElement"
+        >
+          <option
+            selected=""
+            value="0"
+          >
+            No filters
+          </option>
+          <option
+            value="1"
+          >
+            Number &gt; 10
+          </option>
+          <option
+            value="2"
+          >
+            Number &gt; 50
+          </option>
+          <option
+            value="3"
+          >
+            Number &gt; 100
+          </option>
+        </select>
+      </div>
+    </div>
+    <div
+      class="selector-dialog__entries"
+    >
+      <div
+        class="selector-dialog__entries__entry"
+      >
+        <input
+          readonly=""
+          type="checkbox"
+        />
+        <p>
+          Element 1
+        </p>
+      </div>
+      <div
+        class="selector-dialog__entries__entry"
+      >
+        <input
+          readonly=""
+          type="checkbox"
+        />
+        <p>
+          Element 2
+        </p>
+      </div>
+      <div
+        class="selector-dialog__entries__entry"
+      >
+        <input
+          readonly=""
+          type="checkbox"
+        />
+        <p>
+          Element 3
+        </p>
+      </div>
+      <div
+        class="selector-dialog__entries__entry"
+      >
+        <input
+          readonly=""
+          type="checkbox"
+        />
+        <p>
+          Element 4
+        </p>
+      </div>
+      <div
+        class="selector-dialog__entries__entry"
+      >
+        <input
+          readonly=""
+          type="checkbox"
+        />
+        <p>
+          Element 5
+        </p>
+      </div>
+      <div
+        class="selector-dialog__entries__entry"
+      >
+        <input
+          readonly=""
+          type="checkbox"
+        />
+        <p>
+          Element 6
+        </p>
+      </div>
+      <div
+        class="selector-dialog__entries__entry"
+      >
+        <input
+          readonly=""
+          type="checkbox"
+        />
+        <p>
+          Element 7
+        </p>
+      </div>
+      <div
+        class="selector-dialog__entries__entry"
+      >
+        <input
+          readonly=""
+          type="checkbox"
+        />
+        <p>
+          Element 8
+        </p>
+      </div>
+      <div
+        class="selector-dialog__entries__entry"
+      >
+        <input
+          readonly=""
+          type="checkbox"
+        />
+        <p>
+          Element 9
+        </p>
+      </div>
+      <div
+        class="selector-dialog__entries__entry"
+      >
+        <input
+          readonly=""
+          type="checkbox"
+        />
+        <p>
+          Element 10
+        </p>
+      </div>
+    </div>
+    <p>
+      Currently selected elements:
+    </p>
+    <div
+      class="sel-widget__selected-opt-cont"
+    >
+      <p
+        class="no-selected-options"
+      >
+        Selected elements will appear here
+      </p>
+    </div>
+    <div
+      class="selector-dialog__btns"
+    >
+      <button
+        class="btn btn--green"
+      >
+        Save
+      </button>
+      <button
+        class="btn btn--red"
+      >
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
+`;
