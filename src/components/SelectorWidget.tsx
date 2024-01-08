@@ -1,10 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { ISelectorWidgetOption, ISelectorWidgetProps } from "../types/SelectorWidgetTypes";
+import React, { type FC, useEffect, useState } from 'react';
+import { ISelectorWidgetOption } from "../types/SelectorWidgetTypes";
 import { setValuesWrapper } from './helpers/helpers';
 import SelectorDialog from './SelectorDialog';
 import SelectorOptions from './SelectorOptions';
 
-const SelectorWidget: React.FC<ISelectorWidgetProps> = ({ options }) => {
+interface ISelectorWidgetProps {
+    options: ISelectorWidgetOption[],
+}
+
+const SelectorWidget: FC<ISelectorWidgetProps> = ({ options }) => {
     const [values, setValues] = useState<ISelectorWidgetOption[]>([]);
     const [showDialog, setShowDialog] = useState<boolean>(false);
 

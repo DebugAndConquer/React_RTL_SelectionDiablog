@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { FilterFunctionType, ISelectorDialogProps, ISelectorWidgetOption } from "../types/SelectorWidgetTypes";
+import React, { type FC, useEffect, useState } from 'react'
+import { FilterFunctionType, ISelectorWidgetOption } from "../types/SelectorWidgetTypes";
 import classNames from "classnames";
 import { setValuesWrapper } from './helpers/helpers';
 import SelectorOptions from './SelectorOptions';
@@ -7,7 +7,13 @@ import { ACTIVE_ENTRY, DISABLED_ENTRY_MOD, FILTER_VALUES, MAXIMUM_SELECTED_ENTRI
 import Search from './Search';
 import Filter from './Filter';
 
-const SelectorDialog: React.FC<ISelectorDialogProps> = ({ options, onSave, onHide }) => {
+interface ISelectorDialogProps {
+    onSave: (newValues: ISelectorWidgetOption[]) => void,
+    onHide: () => void,
+    options: ISelectorWidgetOption[]
+}
+
+const SelectorDialog: FC<ISelectorDialogProps> = ({ options, onSave, onHide }) => {
     const [values, setValues] = useState<ISelectorWidgetOption[]>([])
     const [entryClasses, setEntryClasses] = useState<string>("");
     const [search, setSearch] = useState<string>("");

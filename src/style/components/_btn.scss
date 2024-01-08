@@ -4,13 +4,16 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+
     &:hover {
         filter: brightness(1.2);
     }
+
     &--green {
         background-color: rgb(5, 82, 56);
         color: white;
     }
+
     &--red {
         background-color: crimson;
         color: white;

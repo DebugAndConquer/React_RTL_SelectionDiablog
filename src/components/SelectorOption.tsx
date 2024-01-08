@@ -1,8 +1,13 @@
-import React from "react";
-import { ISelectorOptionProps } from "../types/SelectorWidgetTypes";
+import React, { type FC } from "react";
 import { spacesToDash } from "./helpers/helpers";
+import { ISelectorWidgetOption } from "../types/SelectorWidgetTypes";
 
-const SelectorOption: React.FC<ISelectorOptionProps> = ({
+interface ISelectorOptionProps {
+  option: ISelectorWidgetOption,
+  onUnselect: (value: number) => void,
+}
+
+const SelectorOption: FC<ISelectorOptionProps> = ({
   option,
   onUnselect,
 }) => {

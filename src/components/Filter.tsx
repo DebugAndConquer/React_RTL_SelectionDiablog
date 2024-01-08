@@ -1,7 +1,12 @@
-import { IFilterProps } from '../types/SelectorWidgetTypes'
+import React, { type FC } from 'react'
 import { FILTER_VALUES } from './helpers/variables'
 
-const Filter = ({ onChange, testId }: IFilterProps) => {
+interface IFilterProps {
+    onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void,
+    testId: string
+}
+
+const Filter: FC<IFilterProps> = ({ onChange, testId }) => {
     return (
         <div>
             <label>Filter</label>

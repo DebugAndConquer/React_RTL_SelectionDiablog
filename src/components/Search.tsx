@@ -1,6 +1,11 @@
-import { ISearchProps } from '../types/SelectorWidgetTypes'
+import React, { type FC } from 'react'
 
-const Search = ({ onChange, testId }: ISearchProps) => {
+interface ISearchProps {
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
+    testId: string
+}
+
+const Search: FC<ISearchProps> = ({ onChange, testId }) => {
     return (
         <div>
             <label>Search</label>

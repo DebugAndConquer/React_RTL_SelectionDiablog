@@ -1,8 +1,13 @@
-import React from 'react';
-import { ISelectorOptionsProps } from '../types/SelectorWidgetTypes';
+import React, { type FC } from 'react';
 import SelectorOption from './SelectorOption'
+import { ISelectorWidgetOption } from '../types/SelectorWidgetTypes';
 
-const SelectorOptions: React.FC<ISelectorOptionsProps> = ({ values, handleUnselect }) => {
+interface ISelectorOptionsProps {
+    values: ISelectorWidgetOption[],
+    handleUnselect: (value: number) => void
+}
+
+const SelectorOptions: FC<ISelectorOptionsProps> = ({ values, handleUnselect }) => {
     return (
         <div className='sel-widget__selected-opt-cont'>
             {values.filter((d) => d.isSelected).length > 0 ?
